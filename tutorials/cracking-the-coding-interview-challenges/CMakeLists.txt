@@ -12,5 +12,6 @@ endmacro()
 add_solution("Arrays: Left Rotation"                array-left-rotation.cpp)
 add_solution("Trees: Is This a Binary Search Tree?" is-binary-search-tree.cpp HEADLESS)
 add_solution("Tries: Contacts"                      tries-contacts.cpp)
+add_solution("Recursion: Fibonacci Numbers"         recursion-fibonacci-numbers.cpp)
 
 add_library(ctci ${CTCI_HEADLESS_CODES})
