@@ -14,5 +14,6 @@ add_solution("Trees: Is This a Binary Search Tree?" is-binary-search-tree.cpp HE
 add_solution("Tries: Contacts"                      tries-contacts.cpp)
 add_solution("Recursion: Fibonacci Numbers"         recursion-fibonacci-numbers.cpp)
 add_solution("Recursion: Davis' Staircase"          recursion-davis-staircase.cpp)
+add_solution("Bit Manipulation: Lonely Integer"     bit-lonely-int.cpp)
 
 add_library(ctci ${CTCI_HEADLESS_CODES})
