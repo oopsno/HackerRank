@@ -9,14 +9,19 @@ macro(add_solution name code)
     endif()
 endmacro()
 
+# DATA STRUCTURES
 add_solution("Arrays: Left Rotation"                array-left-rotation.cpp)
 add_solution("Hash Tables: Ransom Note"             hash-ransom-note.cpp)
 add_solution("Linked Lists: Detect a Cycle"         linked-list-detect-cycle.cpp)
 add_solution("Stacks: Balanced Brackets"            stacks-balanced-brackets.cpp)
 add_solution("Queues: A Tale of Two Stacks"         queues-a-tale-of-two-stacks.cpp)
 add_solution("Trees: Is This a Binary Search Tree?" is-binary-search-tree.cpp HEADLESS)
-
 add_solution("Tries: Contacts"                      tries-contacts.cpp)
+
+# ALGORITHMS
+add_solution("Sorting: Bubble Sort"                 sorting-bubble-sort.cpp)
+
+# TECHNIQUES/CONCEPTS
 add_solution("Recursion: Fibonacci Numbers"         recursion-fibonacci-numbers.cpp)
 add_solution("Recursion: Davis' Staircase"          recursion-davis-staircase.cpp)
 add_solution("Bit Manipulation: Lonely Integer"     bit-lonely-int.cpp)
