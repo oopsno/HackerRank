@@ -20,6 +20,7 @@ add_solution("Tries: Contacts"                      tries-contacts.cpp)
 
 # ALGORITHMS
 add_solution("Sorting: Bubble Sort"                 sorting-bubble-sort.cpp)
+add_solution("Sorting: Comparator"                  sorting-comparator.cpp)
 
 # TECHNIQUES/CONCEPTS
 add_solution("Recursion: Fibonacci Numbers"         recursion-fibonacci-numbers.cpp)
