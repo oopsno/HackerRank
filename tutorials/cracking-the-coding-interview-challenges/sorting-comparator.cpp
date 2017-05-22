@@ -13,7 +13,7 @@ struct Player {
   int score;
 };
 
-std::vector<Player> comparator(std::vector<Player> players) {
+std::vector<Player> comparator(const std::vector<Player> &players) {
   auto sorted = players;
   std::sort(sorted.begin(), sorted.end(), [](const auto &lhs, const auto &rhs) {
     if (lhs.score == rhs.score) {
