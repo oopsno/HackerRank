@@ -1,5 +1,8 @@
+/**
+ * https://www.hackerrank.com/challenges/ctci-lonely-integer
+ */
+
 #include <iostream>
-#include <algorithm>
 
 int main() {
   int n, a, lonely = 0;
