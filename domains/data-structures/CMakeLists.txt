@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_subdirectory(arrays)
 add_subdirectory(linked-lists)
+add_subdirectory(trie)
