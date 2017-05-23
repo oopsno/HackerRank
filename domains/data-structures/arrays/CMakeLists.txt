@@ -8,4 +8,5 @@ macro(add_solution name src)
     add_executable(domain-ds-arrays-${BASENAME} ${src})
 endmacro()
 
-add_solution("Arrays - DS" ds.cpp)
+add_solution("Arrays - DS"    ds.cpp)
+add_solution("2D Arrays - DS" 2d.cpp)
