@@ -11,10 +11,8 @@ class BalancedStack {
       if (is_open(c)) {
         stack[++top] = c;
       } else {
-        if (not match(stack[top], c)) {
+        if (not match(stack[top--], c)) {
           return false;
-        } else {
-          --top;
         }
       }
     }
@@ -29,9 +27,9 @@ class BalancedStack {
     return c == '(' or c == '[' or c == '{';
   }
   inline bool match (char l, char r) {
-    return l == '(' and ')' == r
-        or l == '[' and ']' == r
-        or l == '{' and '}' == r;
+    return (l == '(' and ')' == r)
+        or (l == '[' and ']' == r)
+        or (l == '{' and '}' == r);
   }
   char stack[1000] = {0};
   size_t top = 0;

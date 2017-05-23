@@ -28,10 +28,10 @@ struct compile_time_array {
 template<size_t ...values>
 const size_t compile_time_array<values...>::value[sizeof...(values)] = {values...};
 
-template<template<size_t> typename f, size_t end, size_t ...args>
+template<template<size_t> class f, size_t end, size_t ...args>
 struct map_on_range : map_on_range<f, end - 1, end, args...> {};
 
-template<template<size_t> typename f, size_t ...args>
+template<template<size_t> class f, size_t ...args>
 struct map_on_range<f, 0, args...> : compile_time_array<f<0>::value, f<args>::value...> {};
 
 int main() {

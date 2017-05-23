@@ -1,4 +1,7 @@
 project(leetcode/tutorials/cracking-the-coding-interview-challenges)
+cmake_minimum_required(VERSION 3.7)
+
+set(CMAKE_CXX_STANDARD 14)
 
 macro(add_solution name code)
     if (${ARGC} GREATER 2)

@@ -48,10 +48,10 @@ struct even_filter<compile_time_array<>, void> {
   using type = compile_time_array<>;
 };
 
-template<template<size_t> typename f, size_t end, size_t ...args>
+template<template<size_t> class f, size_t end, size_t ...args>
 struct map_on_range : map_on_range<f, end - 1, end, args...> {};
 
-template<template<size_t> typename f, size_t ...args>
+template<template<size_t> class f, size_t ...args>
 struct map_on_range<f, 0, args...> {
   using type = compile_time_array<f<0>::value, f<args>::value...>;
 };

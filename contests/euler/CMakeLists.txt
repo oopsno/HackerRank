@@ -1,4 +1,7 @@
 project(leetcode/contests/euler)
+cmake_minimum_required(VERSION 3.7)
+
+set(CMAKE_CXX_STANDARD 14)
 
 macro(add_solution name id)
     add_executable(euler_${id} ${id}.cpp)
