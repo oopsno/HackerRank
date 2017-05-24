@@ -1,0 +1,1 @@
+rev = flip (:) `foldl` []
