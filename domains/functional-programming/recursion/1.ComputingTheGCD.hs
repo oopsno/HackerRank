@@ -1,3 +1,5 @@
+module Main where
+
 import Control.Monad
 
 myGCD :: Int -> Int -> Int

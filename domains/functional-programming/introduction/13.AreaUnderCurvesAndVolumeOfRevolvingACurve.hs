@@ -1,3 +1,5 @@
+module Main where
+
 import Control.Monad
 
 genploy :: [Double] -> [Double] -> Double -> Double
@@ -22,4 +24,3 @@ main = do
       vol    = sum $ map (\x -> pi * x ** 2 * step) values
   print area
   print vol
-

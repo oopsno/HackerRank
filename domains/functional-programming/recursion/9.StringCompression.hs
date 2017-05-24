@@ -1,6 +1,10 @@
+module Main where
+
 import Data.List
 
-compress xs@(_:[]) = xs
-compress xs@(x:_)  = x:(show $ length xs)
+compress :: String -> String
+compress xs | length xs == 1 = xs
+            | otherwise      = (head xs):(show $ length xs)
 
+main :: IO ()
 main = putStrLn . concat . map compress . group =<< getContents

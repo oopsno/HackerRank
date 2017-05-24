@@ -1,3 +1,6 @@
+module Main where
+
 import Control.Monad
 
-main = print =<< liftM (sum . filter odd . map read . lines) getContents
+main :: IO ()
+main = print =<< liftM (sum . filter odd . map (read :: String -> Int) . lines) getContents

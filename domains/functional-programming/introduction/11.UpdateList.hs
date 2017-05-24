@@ -1,3 +1,4 @@
-import Control.Monad
+module Main where
 
-main = mapM_ print =<< liftM (map abs . map read . lines) getContents
+main :: IO ()
+main = mapM_ (print . abs . (read :: String -> Int)) . words =<< getContents

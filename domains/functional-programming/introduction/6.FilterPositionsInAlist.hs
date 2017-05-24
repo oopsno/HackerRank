@@ -6,8 +6,10 @@ data Picker = Picker { pos :: Position, ctx :: [String] }
 instance Show Picker where
   show = unlines . reverse . ctx
 
+pickOnEven :: [String] -> Picker
 pickOnEven = foldl pickOnEven' $ Picker Odd []
   where pickOnEven' r x | pos r == Even = r { pos = Odd, ctx = x:ctx r }
                         | otherwise     = r { pos = Even }
 
+main :: IO ()
 main = print =<< liftM (pickOnEven . lines) getContents
