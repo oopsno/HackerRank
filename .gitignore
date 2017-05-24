@@ -7,3 +7,6 @@ domains/ai/images/captcha/input/
 domains/ai/images/captcha/output/
 domains/ai/images/captcha/model.txt
 domains/ai/ml/laptop-battery-life/trainingdata.txt
+domains/functional-programming/dist/
+domains/functional-programming/Setup.hs
+domains/functional-programming/functional-programming.cabal
