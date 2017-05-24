@@ -2,3 +2,6 @@ build/
 .idea/
 .vscode/
 .vscode-upload.json
+domains/ai/images/captcha/input/
+domains/ai/images/captcha/output/
+domains/ai/images/captcha/model.txt
