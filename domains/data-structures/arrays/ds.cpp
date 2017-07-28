@@ -1,5 +1,7 @@
 #include <algorithm>
 #include <iostream>
+#include <memory>
+#include <iterator>
 
 int main() {
   size_t n;
